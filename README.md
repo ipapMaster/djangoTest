@@ -45,3 +45,8 @@
 15. Для регистрации новой модели необходимо её создать в файле вашеприложение/models.py
 Далее выполнить команду python manage.py makemigrations вашеприложение
 16. Выполнить миграции: python manage.py migrate ваше приложение
+
+Для публикации на pythonanywhere необходимо зайти в Bash-консоль и выполнить там следующее
+
+- pip3 install --user pythonanywhere
+- pa_autoconfigure_django_py https://github.com/<your-github-username>/your_repo.git
