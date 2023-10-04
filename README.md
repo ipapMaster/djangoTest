@@ -18,6 +18,7 @@
 
 обновить requirements.txt (`pip freeze > requirements.txt`)
 
+
 4. Создать стартовую структуру Django-проекта
 
 `django-admin startproject config .`
@@ -47,8 +48,9 @@
 `python manage.py createsuperuser`
 
 15. Изменяем язык админки (config/settings.py) и, если необходимо, заголовки в firstapp/admin.py
-16. 
-17. Для регистрации новой модели необходимо её создать в файле вашеприложение/models.py
+    
+17. Для регистрации новой модели необходимо её создать в файле `вашеприложение/models.py`
+    
 Далее выполнить команду
 
 `python manage.py makemigrations вашеприложение`
@@ -57,7 +59,7 @@
    
     `python manage.py migrate ваше приложение`
 
-Для публикации на pythonanywhere необходимо зайти в Bash-консоль и выполнить там следующее
+19. Для публикации на pythonanywhere необходимо зайти в Bash-консоль и выполнить там следующее
 
 - pip3 install --user pythonanywhere
 - pa_autoconfigure_django_py https://github.com/<your-github-username>/your_repo.git
